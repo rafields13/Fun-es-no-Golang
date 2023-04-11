@@ -1,0 +1,1 @@
+# Fun-es-no-Golang.
