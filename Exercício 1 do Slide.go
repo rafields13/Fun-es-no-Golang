@@ -8,7 +8,7 @@ func divide(a float64, b float64) (float64, error) { // Criamos a função "divi
 
 	if b == 0 { // Puxamos um controlador if para retornar o erro caso o segundo parâmetro seja igual a 0.
 
-		return 0, fmt.Errorf("não pode dividir por 0") // Retornamos o valor 0 e declaramos o erro como: "não pode dividir por 0".
+		return 0, fmt.Errorf("não pode dividir por 0") // Retornamos o valor 0 e denominamos o erro como: "não pode dividir por 0".
 
 	} // Fechamos o if.
 

@@ -8,17 +8,17 @@ func slice(nums []int) (int, error) { // Criamos a função "slice", que vai rec
 
 	if len(nums) == 0 { // Puxamos um controlador if para retornar o erro caso o slice esteja vazio.
 
-		return 0, fmt.Errorf("o Slice está vazio") // Retornamos o valor 0 e declaramos o erro como: "o Slice está vazio".
+		return 0, fmt.Errorf("o Slice está vazio") // Retornamos o valor 0 e denominamos o erro como: "o Slice está vazio".
 
 	} // Fechamos o if.
 
-	menor := 0 // Declaramos a varável "menor" com valor inicial 0.
+	menor := nums[0] // Declaramos a varável "menor" com valor inicial igual ao do primeiro item do Slice.
 
-	for _, x := range nums { // Criamos um loop for que vai passar por cada item do Slice e atribuir o respectivo valor à variável "x".
+	for i := 1; i < len(nums); i++ { // Criamos um loop for que vai passar por cada item do Slice e atribuir o respectivo valor à variável "i".
 
-		if nums[x-1] > nums[x] { // Puxamos um outro if para comparar o valor do item atual com o anterior.
+		if nums[i] < menor { // Puxamos um outro if para comparar o valor do item atual com o anterior.
 
-			menor = x // E, caso o valor anterior seja maior que o valor atual, a variável x permanece com o menor valor.
+			menor = nums[i] // E, caso o valor atual seja maior que o valor anterior, o menor valor é atribuído à variável "menor".
 
 		} // Fechamos o if.
 
@@ -26,7 +26,7 @@ func slice(nums []int) (int, error) { // Criamos a função "slice", que vai rec
 
 	return menor, nil // Retornamos a varável menor, com o menor valor e retornamos também o "nil", conhecido também como vazio.
 
-}
+} // Fechamos a função "slice".
 
 func main() { // Criamos a função "main", que não possui parâmetros.
 

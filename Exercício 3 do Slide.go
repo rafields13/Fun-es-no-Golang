@@ -11,13 +11,13 @@ func c(s string) (int, error) { // Criamos a função "c", que vai receber uma s
 
 	if strings.Count(s, "") == 0 { // Puxamos um controlador if para retornar o erro caso a string esteja vazia.
 
-		return 0, fmt.Errorf("não tem nenhum texto para ser lido") // Retornamos o valor 0 e declaramos o erro como: "não tem nenhum texto para ser lido".
+		return 0, fmt.Errorf("não tem nenhum texto para ser lido") // Retornamos o valor 0 e denominamos o erro como: "não tem nenhum texto para ser lido".
 
 	} // Fechamos o if.
 
 	return strings.Count(s, "") - 1, nil // Retornamos a quantidade de espaços curtos que existem entre cada caractere. Porém, subtraímos 1 ao valor final, porque um espaço curto repete, dessa forma, temos que tirar um da contagem. E retornamos o "nil" ou vazio.
 
-}
+} // Fechamos a função "c".
 
 func main() { // Criamos a função "main", que não possui parâmetros.
 

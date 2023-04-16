@@ -8,7 +8,7 @@ func m(list []int) (int, error) { // Criamos a função "m", a qual retornará u
 
 	if len(list) == 0 { // Puxamos um controlador if para retornar o erro caso a lista esteja vazia.
 
-		return 0, fmt.Errorf("a lista está vazia") // Retornamos o valor 0 e declaramos o erro como: "a list está vazia".
+		return 0, fmt.Errorf("a lista está vazia") // Retornamos o valor 0 e denominamos o erro como: "a list está vazia".
 
 	} // Fechamos o if.
 
